@@ -1,5 +1,20 @@
 ## Programmer Vocab
 
+## Varaible declaration and Instantiation
+* Parts of a Variable:
+	* There is the variable name and it's value. Two parts.
+
+	* The variable's name is what you declare it to be. The value is what you assign to it.
+
+* Variables are Initialized.
+* All variables are always given an initial value at the point the variable is declared. Thus all variables are initialized.
+
+* Objects are Instantiated.
+* Humans are born. Objects are instantiated. A baby is an instance of a Human, an object is an instance of some Class.
+
+* The act of creating an instance of a Class is called *instantiation (Ta-Da!)*
+
+
 ## params
 * The params come from the user's browser when they request the page. For an HTTP GET request, which is the most common, the params are encoded in the url. For example, if a user's browser requested.
 * params values can come from the query string of a GET request, or the form data of a POST request, but there's also a third place they can come from: The path of the URL.
@@ -65,7 +80,7 @@ This has various consequences, and each is useful in different situations.
 * In computer science, *primitive data type* is either of the following:
 
 	* a basic type is a data type provided by a programming language as a basic 	building block. Most languages allow more complicated composite types to be 	recursively constructed starting from basic types.
-	* a built-in type is a data type for which the programming language provides 	built-in support.
+	* a built-in type is a data type for which the programming language provides built-in support.
 	
 *  in JavaScript, they are assimilated to a primitive data type that is both basic and built-in.
 
