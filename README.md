@@ -113,3 +113,40 @@ Classic basic primitive types may include:
 		
 * The grouping operators are the things we use to help show what should be evaluated first, as in mathematical problems. We’re saying “evaluate this first, then take the result and do something with it”.
 * In the first example we’re saying “first add 1 and 2, then take the result and multiply by 3″, whereas in the second example we’re saying “first multiply 2 and 3, then take the result and add 1″.
+
+## What is a Callback or Higher-order Function?
+
+* A callback function, also known as a higher-order function, is a function that is passed to another function (let’s call this other function “otherFunction”) as a parameter, and the callback function is called (executed) inside otherFunction.
+* Here is another classic example of callback functions from basic JavaScript:
+		
+		var friends = ["Mike", "Stacy", "Andy", "Rick"];
+
+		friends.forEach(function (eachName, index){
+		console.log(index + 1 + ". " + eachName); // 1. Mike, 2. Stacy, 3. Andy, 4. Rick
+		});
+### How it works?
+* Because functions are first-class objects in JavaScript, we can treat functions like objects, so we can pass functions around like variables and return them in functions and use them in other functions.
+* When we pass a callback function as an argument to another function, we are only passing the function definition. We are not executing the function in the parameter.
+* It is important to note that the callback function is not executed immediately. It is “called back” (hence the name) at some specified point inside the containing function’s body.
+
+### What is a closure?
+* A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain.
+* The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.
+* The inner function has access not only to the outer function’s variables, but also to the outer function’s parameters.
+* A Basic Example of Closures in JavaScript: 
+
+	function showName (firstName, lastName) { 
+	var nameIntro = "Your name is ";
+	    // this inner function has access to the outer function's variables, including the parameter
+	function makeFullName () {         
+	return nameIntro + firstName + " " + lastName;     
+	}
+	
+	return makeFullName (); 
+	} 
+	
+	showName ("Michael", "Jackson"); // Your name is Michael Jackson 
+### Closures’ Rules and Side Effects
+	1.Closures have access to the outer function’s variable even after the outer function returns
+	2.Closures store references to the outer function’s variables.
+	3.Closures Gone Awry
