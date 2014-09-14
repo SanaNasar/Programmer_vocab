@@ -97,9 +97,9 @@ Classic basic primitive types may include:
 ## Groupings
 
 		
-		eg) 1) (1 + 2) * 3;  // 9
+		1) (1 + 2) * 3;  // 9
 
-			2) 1 + (2 * 3);  // 7
+		2) 1 + (2 * 3);  // 7
 		
 * The grouping operators are the things we use to help show what should be evaluated first, as in mathematical problems. We’re saying “evaluate this first, then take the result and do something with it”.
 * In the first example we’re saying “first add 1 and 2, then take the result and multiply by 3″, whereas in the second example we’re saying “first multiply 2 and 3, then take the result and add 1″.
