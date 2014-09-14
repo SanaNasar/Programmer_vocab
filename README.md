@@ -3,15 +3,12 @@
 ## Varaible declaration and Instantiation
 * Parts of a Variable:
 	* There is the variable name and it's value. Two parts.
-
 	* The variable's name is what you declare it to be. The value is what you assign to it.
-
 * Variables are Initialized.
 * All variables are always given an initial value at the point the variable is declared. Thus all variables are initialized.
 
 * Objects are Instantiated.
 * Humans are born. Objects are instantiated. A baby is an instance of a Human, an object is an instance of some Class.
-
 * The act of creating an instance of a Class is called *instantiation (Ta-Da!)*
 
 
