@@ -128,25 +128,25 @@ Classic basic primitive types may include:
 * Because functions are first-class objects in JavaScript, we can treat functions like objects, so we can pass functions around like variables and return them in functions and use them in other functions.
 * When we pass a callback function as an argument to another function, we are only passing the function definition. We are not executing the function in the parameter.
 * It is important to note that the callback function is not executed immediately. It is “called back” (hence the name) at some specified point inside the containing function’s body.
-
 ###What is a closure?
 * A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain.
 * The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets), it has access to the outer function’s variables, and it has access to the global variables.
 * The inner function has access not only to the outer function’s variables, but also to the outer function’s parameters.
 * A Basic Example of Closures in JavaScript: 
 
-	function showName (firstName, lastName) { 
-	var nameIntro = "Your name is ";
-	    // this inner function has access to the outer function's variables, including the parameter
-	function makeFullName () {         
-	return nameIntro + firstName + " " + lastName;     
-	}
-	
-	return makeFullName (); 
-	} 
-	
-	showName ("Michael", "Jackson"); // Your name is Michael Jackson 
+		function showName (firstName, lastName) { 
+		var nameIntro = "Your name is ";
+		    // this inner function has access to the outer function's variables, including the parameter
+		function makeFullName () {         
+		return nameIntro + firstName + " " + lastName;     
+		}
+		
+		return makeFullName (); 
+		} 
+		
+		showName ("Michael", "Jackson"); // Your name is Michael Jackson
+		
 ###Closures’ Rules and Side Effects
-	1.Closures have access to the outer function’s variable even after the outer function returns
-	2.Closures store references to the outer function’s variables.
-	3.Closures Gone Awry
+	1. Closures have access to the outer function’s variable even after the outer function returns
+	2. Closures store references to the outer function’s variables.
+	3. Closures Gone Awry
