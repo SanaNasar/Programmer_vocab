@@ -27,9 +27,14 @@ Then a request to a URL like http://example.com/products/42 will set params[:id]
 * Representational State Transfer is an architectural style that abstracts the architectural elements within a distributed system. ...
 * A REST API defines a set of functions which developers can perform requests and receive responses via HTTP protocol such as GET and POST.
 * The REST API should specify what it can provide and how to use it, details such as query parameters, response format, request limitations, public use/API keys, method (GET/POST/PUT/DELETE)
+
 ## Variable instantiation
+
 * Instantiation means to create an instance for a variable, class or object. Initialization means to initiate the same object or class for any purpose.
-##Implicit Vs Explicit
+
+
+## Implicit Vs Explicit
+
 * In Javascript, If the function that was called has no explicit return statement, then it implicitly returns the value of *this* - the new object.
 * In case of an explicit return statement, the function returns the value specified by that statement, but only if the return value is an Object.
 * In Ruby.
