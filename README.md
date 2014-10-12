@@ -152,6 +152,34 @@ Classic basic primitive types may include:
 		showName ("Michael", "Jackson"); // Your name is Michael Jackson
 		
 ###Closures’ Rules and Side Effects
+
 	1. Closures have access to the outer function’s variable even after the outer function returns
 	2. Closures store references to the outer function’s variables.
 	3. Closures Gone Awry
+
+## Dynamic Dispatch
+
+* The process of selecting which implementation of a polymorphic operation (method or function) to call at runtime.
+* Dynamic dispatch contrasts with static dispatch in which the implementation of a polymorphic operation is selected at compile-time.
+* The purpose of dynamic dispatch is to support cases where the appropriate implementation of a polymorphic operation can't be determined at compile time because it depends on the runtime type of one or more actual parameters to the operation.
+
+[Dynamic Dispatch](http://en.wikipedia.org/wiki/Dynamic_dispatch)
+
+
+## Protocols
+
+* In object-oriented programming, a **protocol or interface** is a common means for unrelated objects to communicate with each other. These are definitions of methods and values which the objects agree upon in order to cooperate.
+
+[Protocol (Object-Oriented Programming)](http://en.wikipedia.org/wiki/Protocol_(object-oriented_programming))
+
+* A **routing protocol** specifies how routers communicate with each other, disseminating information that enables them to select routes between any two nodes on a computer network.
+
+[Routing Protocol](http://en.wikipedia.org/wiki/Routing_protocol)
+
+## Heap Memory
+
+* The portion of memory where dynamically allocated memory resides (i.e. memory allocated via [malloc](http://stackoverflow.com/questions/1213403/what-is-malloc-doing-in-this-code)).
+* Memory allocated from the heap will remain allocated until one of the following occurs:
+	* The memory is free'd
+	* The program terminates
+
